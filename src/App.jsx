@@ -1,41 +1,26 @@
-import { useReducer } from 'react';
 import './App.css'
-import PlayerFilter from './components/playerFilter';
-import PlayerInfo from './components/playerInfo';
-import PlayerTable from './components/playerTable';
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/partials/header";
+import PlayerRoute from './components/players/playerRoute';
+import Footer from "./components/partials/footer";
 
 function App() {
  
   return (
-    <><h2>Men's Singles Ranking</h2>
-     
-      <div
-      style={{
-        margin: "auto",
-        display: "flex",
-        flexDirection: "column",
-        width: "60vw",
-        paddingTop: "1rem",
-      }}
-      >
-      
-      <PlayerFilter/>
-      <h1 className="title">Player Search</h1>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "3fr 1fr",
-          gap: "2rem",
-        }}
-      >
+    <Router>
+        <Header></Header>
+            <Routes>
+            
+            
+            <Route
+            path="players"
+            element={ <PlayerRoute></PlayerRoute> }
+          ></Route>
+
+            </Routes>
     
-      <PlayerTable/>
-      <PlayerInfo/>
-      </div>
-    </div>
-  
-    </> 
+        <Footer></Footer>
+    </Router>
    )
 
 }

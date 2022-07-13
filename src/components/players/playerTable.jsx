@@ -1,10 +1,10 @@
 import React from "react";
 import { useEffect } from 'react';
-import PlayerRow from "./playerRow";
-import { setData } from "../redux/playerSlice";
+import PlayerRow from "../players/playerRow";
+import { setData } from "../../redux/playerSlice";
 import { useDispatch, useSelector} from "react-redux";
 
-import {Paper, TableContainer, Table, TableHead, TableRow, TableCell, TableBody, Button} from "@mui/material"
+import {Paper, TableContainer, Table, TableHead, TableRow, TableCell, TableBody} from "@mui/material"
 
 const PlayerTable = () => {
     const { data, filter } = useSelector((state) => state.player)
@@ -30,7 +30,7 @@ const PlayerTable = () => {
                 <TableBody>
                     {data
                         .filter(({name})=> name.toLowerCase().includes(filter.toLowerCase()))
-                        .slice(0, 20)
+                        .slice(0, 10)
                         .map((player) => (
                         <PlayerRow key={player.id} player= {player}/>
                         )

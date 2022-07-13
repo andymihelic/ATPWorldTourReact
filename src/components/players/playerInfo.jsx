@@ -1,7 +1,7 @@
 import React from "react";
 import {Card, CardContent, CardActions, Typography, Button} from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
-import {setSelectedPlayer} from "../redux/playerSlice";
+import {setSelectedPlayer} from "../../redux/playerSlice";
 
 const PlayerInfo = () => {
   const dispatch = useDispatch()
