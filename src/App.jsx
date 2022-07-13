@@ -12,10 +12,9 @@ function App() {
             <Routes>
             
             
-            <Route
-            path="players"
-            element={ <PlayerRoute></PlayerRoute> }
-          ></Route>
+            <Route path="players" element={ <PlayerRoute></PlayerRoute> }> </Route>
+
+           
 
             </Routes>
     
