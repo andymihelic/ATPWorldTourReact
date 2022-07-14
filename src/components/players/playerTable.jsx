@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import PlayerRow from "../players/playerRow";
 import { setData } from "../../redux/playerSlice";
 import { useDispatch, useSelector} from "react-redux";
-
 import {Paper, TableContainer, Table, TableHead, TableRow, TableCell, TableBody} from "@mui/material"
 
 const PlayerTable = () => {
