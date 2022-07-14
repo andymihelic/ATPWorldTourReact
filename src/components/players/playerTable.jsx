@@ -31,11 +31,8 @@ const PlayerTable = () => {
                         .filter(({name})=> name.toLowerCase().includes(filter.toLowerCase()))
                         .slice(0, 10)
                         .map((player) => (
-                        <PlayerRow key={player.id} player= {player}/>
-                        )
-
-                    )}
-
+                        <PlayerRow key={player.id} player= {player}/>))
+                    }
                 </TableBody>
             </Table>
         </TableContainer>

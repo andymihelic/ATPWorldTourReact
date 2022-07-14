@@ -47,7 +47,7 @@ const PlayerInfo = () => {
           <CardActions>
             <Button
               variant="contained"
-              color="secondary"
+              color="primary"
               onClick={() => dispatch(setSelectedPlayer(null))}
             >
               dismiss

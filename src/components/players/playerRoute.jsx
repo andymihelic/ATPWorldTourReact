@@ -6,8 +6,7 @@ function PlayerRoute() {
  
   return (
    <>
-          
-      <div
+     <div
       style={{
         margin: "auto",
         display: "flex",
@@ -15,7 +14,7 @@ function PlayerRoute() {
         width: "90vw",
         paddingTop: "1rem",
       }}
-      >
+     >
       
       <PlayerFilter/>
       <div

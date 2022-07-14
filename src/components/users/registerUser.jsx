@@ -48,9 +48,7 @@ function Signup() {
               
             </div>
             <div className="inputs d-flex flex-column w-100 p-2 px-sm-5 mb-4 ">
-              <label htmlFor="name" className="mb-2">
-                Name
-              </label>
+              <label htmlFor="name" className="mb-2">Name</label>
               <input
                 onChange={(e) => setName(e.target.value)}
                 type="text"
@@ -72,9 +70,7 @@ function Signup() {
                 placeholder="Enter your username"
                 className="mb-3 shadow-none form-input"
               />
-              <label htmlFor="email" className="mb-2">
-                Email address
-              </label>
+              <label htmlFor="email" className="mb-2">Email address</label>
               <input
                 onChange={(e) => setEmail(e.target.value)}
                 type="email"
@@ -85,9 +81,7 @@ function Signup() {
                 className="mb-3 shadow-none form-input"
                 required
               />
-              <label htmlFor="password" className="mb-2">
-                Password
-              </label>
+              <label htmlFor="password" className="mb-2">Password</label>
               <input
                 onChange={(e) => setPassword(e.target.value)}
                 type="password"

@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import authContext from "../../auth/authContext";
 import authService from "../../auth/authService";
 
-
 function Login() {
   const {setAuth} = useContext(authContext)
   const emailRef = useRef();

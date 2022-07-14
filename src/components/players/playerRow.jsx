@@ -13,7 +13,7 @@ const PlayerRow = ({ player }) => {
             <TableCell>{player.points}</TableCell>
             <TableCell><Button onClick={()=> 
             dispatch (setSelectedPlayer(player))}
-            >Player Info</Button>
+            >Overview</Button>
             </TableCell>
         </TableRow>
     )              
