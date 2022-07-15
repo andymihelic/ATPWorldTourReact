@@ -5,8 +5,8 @@
 }
 
 .imgHeader{
-  height: 34px;
-  width: 66px;
+  height: 40px;
+  width: 100px;
 }
 
 .nav {
@@ -16,11 +16,20 @@
   font-size: 12px;
 }
 
+.linkNav:hover {
+  background-color: #33C4FF ;
+}
+
 .subNavBar {
   height: 60px;
   background-color: #33C4FF ;
   color: #000; 
   font-size: 18px;
+}
+
+.containerCarousel{
+  background-color: #33C4FF ;
+
 }
 
 .footer {
@@ -43,7 +52,7 @@
 }
 
 .linkFooter:hover {
-  background-color: #c02328;
+  background-color: #33C4FF ;
 }
 
 @media (max-width: 767px) {

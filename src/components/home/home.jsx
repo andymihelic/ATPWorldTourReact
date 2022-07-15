@@ -1,6 +1,6 @@
 import {Carousel, Container, Button} from 'react-bootstrap';
 import React from 'react';
-import "./home.css";
+import "../../App.css";
 import {Link} from "react-router-dom";
 
 function Home() {
